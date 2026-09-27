@@ -6,7 +6,7 @@ def hello():
   return " <html><head></head> <body> Hello World! </body></html>"
 if __name__=="__main__":
   app.run(host='127.0.0.1',port=5000)
-from flaks import render_template
+from flask import render_template
 @app.route("/data_to")
 def data_to():
   some_pars={'user':'Ivan','color':'red'}
