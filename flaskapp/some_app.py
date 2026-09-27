@@ -1,10 +1,8 @@
-print("Hello world")
-from flask import Flask
+from flask import Flask,render_template
 app=Flask(__name__)
 @app.route("/")
 def hello():
   return " <html><head></head> <body> Hello World! </body></html>"
-from flask import render_template
 @app.route("/data_to")
 def data_to():
   some_pars={'user':'Ivan','color':'red'}
