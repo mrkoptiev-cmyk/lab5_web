@@ -1,5 +1,5 @@
 from flask import Flask,render_template
-from flask_wtf import FlaskForm,RecaptchaField
+from flask-wtf import FlaskForm,RecaptchaField
 from wtforms import StringField,SubmitField,TextAreaField
 from wtforms.validators import DataRequired
 from flask_wtf.file import FileField,FileAllowed,FileRequired
