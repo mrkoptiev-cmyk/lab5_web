@@ -32,7 +32,7 @@ class NetForm(FlaskForm):
   submit=SubmitField('send')
 from werkzeug.utils import secure_filename
 import os
-import net as neuronet
+import flaskapp.net as neuronet
 @app.route('/net',methods=['GET','POST'])
 def net():
   form=NetForm()
