@@ -25,7 +25,7 @@ from flask_bootstrap import Bootstrap
 bootstrap=Bootstrap(app)
 class NetForm(FlaskForm):
   openid=StringField('openid',validators=[DataRequired()])
-  upload=FileField('Load image',validators[
+  upload=FileField('Load image',validators=[
                    FileRequired(),
                    FileAllowed(['png','jpeg','jng'],'Images only')])
   recaptcha=RecaptchaField()
