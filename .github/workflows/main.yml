@@ -22,7 +22,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install flask gunicorn flask-wtf
+        pip install flask gunicorn flask-wtf flask-bootstrap
 
     - name: Run app check
       run: |
