@@ -18,8 +18,8 @@ def data_to():
 SECRET_KEY='secret'
 app.config['SECRET_KEY']=SECRET_KEY
 app.config['RECAPTCHA_USE_SSL']=False
-app.config['RECAPTCHA_PUBLIC_KEY']='Сюда поместиь ключ'
-app.config['RECAPTCHA_PRIVATE_KEY']='Сюда поместить личный ключ'
+app.config['RECAPTCHA_PUBLIC_KEY']='6Lcnj94tAAAAAKQH77QjUoHGLeA4O7Y8srdkkeaZ'
+app.config['RECAPTCHA_PRIVATE_KEY']='6Lcnj94tAAAAABX08lWF8cojBBdFf7j_IO6EkAiF'
 app.config['RECAPTCHA_OPTIONS']={'theme':'white'}
 from flask_bootstrap import Bootstrap
 bootstrap=Bootstrap(app)
