@@ -6,9 +6,9 @@ from keras.applications.resnet50 import preprocess_input,decode_predictions
 import os
 from PIL import Image
 import numpy as np
-from tensorflow.compat.v1 import ConfigPhoto
+from tensorflow.compat.v1 import ConfigProto
 from tensorflow.compat.v1 import InteractiveSession
-config=ConfigPhoto()
+config=ConfigProto()
 config.gpu_options.per_process_gpu_memory_fraction=0.7
 config.gpu_options.allow_growth=True
 session=InteractiveSession(config=config)
