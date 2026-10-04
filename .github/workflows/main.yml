@@ -22,7 +22,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install flask gunicorn flask-wtf flask-bootstrap pillow keras tensorflow==2.0.0-alpha0 
+        pip install flask gunicorn flask-wtf flask-bootstrap pillow keras tensorflow 
 
     - name: Run app check
       run: |
