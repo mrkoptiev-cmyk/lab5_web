@@ -55,7 +55,7 @@ import json
 app.route("/apinet",methods=['GET','POST'])
 def apinet():
   neurodic={}
-  if request.mimetype='application/json':
+  if request.mimetype=='application/json':
     data=request.data_json()
     filebytes=data['imagebin'].encode('utf-8')
     cfile=base64.b64decode(filebytes)
