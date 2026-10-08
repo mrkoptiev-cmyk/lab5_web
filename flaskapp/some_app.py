@@ -70,7 +70,7 @@ def apinet():
                 status=200,
                 mimetype="application/json")
   return resp
-import Ixml.etree as ET
+import lxml.etree as ET
 @app.route('/apixml',methods=['GET','POST'])
 def apixml():
   dom=ET.parse("./static/xml/file.xml")
