@@ -4,7 +4,7 @@ from wtforms import StringField,SubmitField,TextAreaField
 from wtforms.validators import DataRequired
 from flask_wtf.file import FileField,FileAllowed,FileRequired
 
-app=Flask(__name__
+app=Flask(__name__)
 @app.route("/")
 def hello():
   return " <html><head></head> <body> Hello World! </body></html>"
